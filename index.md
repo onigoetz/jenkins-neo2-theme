@@ -1,5 +1,7 @@
 # Jenkins Neo2 Theme
 
+[![Build Status](https://travis-ci.org/TobiX/jenkins-neo2-theme.svg?branch=master)](https://travis-ci.org/TobiX/jenkins-neo2-theme)
+
 Beautify your Jenkins with the a modern flat theme!
 
 Website: https://tobix.github.io/jenkins-neo2-theme
