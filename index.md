@@ -58,7 +58,7 @@ This will generate the following file:
 - dist/neo-light.css
 - dist/neo-dark.css
 
-** Note: Theme neo-dark is WIP **
+**Note: Theme neo-dark is WIP**
 
 ## Compatibility
 
@@ -74,7 +74,7 @@ If you are experiencing issues please let me know! Also, feel free to contribute
 
 MIT License
 
-##Thanks to
+## Thanks to
 
 - [Jenkins neo theme][neo] for the inspiration and original work
 - [Jenkins material theme][material] for the inspiration and original work
