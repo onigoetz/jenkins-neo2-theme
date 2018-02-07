@@ -1,5 +1,7 @@
 # Jenkins Neo2 Theme
 
+![license](https://img.shields.io/github/license/tobix/jenkins-neo2-theme.svg)
+![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)
 [![Build Status](https://travis-ci.org/TobiX/jenkins-neo2-theme.svg?branch=master)](https://travis-ci.org/TobiX/jenkins-neo2-theme)
 
 Beautify your Jenkins with the a modern flat theme!
@@ -10,7 +12,7 @@ This started as a fork to **jenkins-neo-theme**, which itself started as a fork
 to the **jenkins-material-theme**, but was developed further to work correctly
 with modern versions of Jenkins.
 
- 
+
 ## Features
 
 * Just one css file
