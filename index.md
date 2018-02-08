@@ -19,11 +19,13 @@ with modern versions of Jenkins.
 * Embed minified SVG images
 * Multiple ways to install
 
-<!-- ## Screenshots
-![Screen 1](screens/screen1.png)   ![Screen 2](screens/screen2.png)   ![Screen 3](screens/screen3.png)    ![Screen 4](screens/screen4.png) -->
+## Screenshots
+
+![Start page](img/screenshot1.png)
+![Job page](img/screenshot2.png)
 
 
-## Installation 
+## Installation
 
 ### Using this GitHub page
 
