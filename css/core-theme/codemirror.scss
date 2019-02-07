@@ -1,0 +1,130 @@
+.CodeMirror {
+    background-color: var(--console-black) !important;
+    color: var(--console-white) !important;
+    font-size: 14px;
+    cursor: text;
+}
+
+.CodeMirror * {
+    font-family: monospace !important;
+}
+
+.CodeMirror pre {
+    line-height: 20px !important;
+}
+
+.CodeMirror-gutters {
+    background: var(--color-black) !important;
+    color: var(--console-green) !important;
+    border: none;
+}
+
+.CodeMirror-guttermarker, .CodeMirror-guttermarker-subtle, .CodeMirror-linenumber {
+    color: var(--console-green) !important;
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid var(--console-white) !important;
+}
+
+div.CodeMirror-selected {
+    background: var(--console-selection) !important;
+}
+
+.CodeMirror-focused div.CodeMirror-selected {
+    background: var(--console-selection) !important;
+}
+
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection {
+    background: var(--console-selection) !important;
+}
+
+.CodeMirror-activeline-background {
+    background: var(--console-black) !important;
+}
+
+.cm-keyword {
+    color: var(--console-purple) !important;
+}
+
+.cm-operator {
+    color: var(--color-white) !important;
+}
+
+.cm-variable-2 {
+    color: var(--console-light-green) !important;
+}
+
+.cm-variable-3 {
+    color: var(--console-blue) !important;
+}
+
+.cm-builtin {
+    color: var(--console-yellow) !important;
+}
+
+.cm-atom {
+    color: var(--console-red) !important;
+}
+
+.cm-number {
+    color: var(--console-red) !important;
+}
+
+.cm-def {
+    color: var(--console-white) !important;
+}
+
+.cm-string {
+    color: var(--console-yellow) !important;
+}
+
+.cm-string-2 {
+    color: var(--console-light-green) !important;
+}
+
+.cm-comment {
+    color: var(--console-green) !important;
+}
+
+.cm-variable {
+    color: var(--console-blue) !important;
+}
+
+.cm-tag {
+    color: var(--console-light-green) !important;
+}
+
+.cm-meta {
+    color: var(--console-light-green) !important;
+}
+
+.cm-attribute {
+    color: var(--console-yellow) !important;
+}
+
+.cm-property {
+    color: var(--console-light-green) !important;
+}
+
+.cm-qualifier {
+    color: var(--console-yellow) !important;
+}
+
+.cm-variable-3 {
+    color: var(--console-yellow) !important;
+}
+
+.cm-tag {
+    color: var(--console-red) !important;
+}
+
+.cm-error {
+    color: var(--console-white) !important;
+    background-color: var(--console-red) !important;
+}
+
+.CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: var(--console-white) !important;
+}

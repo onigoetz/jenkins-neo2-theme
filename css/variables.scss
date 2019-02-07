@@ -1,0 +1,50 @@
+:root {
+    /* Icon Sizes */
+    --size-sm: 18px;
+    --size-md: 24px;
+    --size-lg: 36px;
+    --size-xl: 48px;
+
+    /* Color */
+    --color-green: #009688;
+    --color-yellow: #ffc107;
+    --color-red: #f44336;
+    --color-white: #fff;
+    --color-black: #444;
+    --color-grey: #9e9e9e;
+    --color-lightergrey: #eee;
+
+    --color-primary: #fa5b35;
+    --color-accent-light: color(var(--color-primary) tint(30%));
+    --color-link: color(var(--color-primary) shade(5%));
+    --color-button: #fa5b35;
+    --color-button-hover: color(var(--color-button) shade(5%));
+    --color-button-active: #ffcc53;
+
+    --color-bg: var(--color-white);
+    --color-text: var(--color-black);
+
+    --color-footer-bg: var(--color-lightergrey);
+    --color-sticker-bg: #eee;
+
+    --color-selection: #80cbc4;
+
+    /* Console colors */
+    // https://github.com/tylerreckart/hyperblue-vibrancy/blob/master/index.js
+    --console-selection: rgba(255, 255, 255, 0.15);
+    --console-black: #2c2c31;
+    --console-white: #f2f2f2;
+    --console-red: #d1267f;
+    --console-yellow: #f8fb3c;
+    --console-green: #00da90;
+    --console-blue: #009ce6;
+    --console-purple: #ec26cd;
+
+    // TODO : improve on these colors
+    --console-lime: #c3e88d;
+    --console-light-green: #80cbc4;
+
+    /* Font */
+    --font-primary: "Open Sans";
+    --font-console: "Fira Mono", "Courier New", Menlo, Courier;
+}

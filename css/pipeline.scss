@@ -1,0 +1,89 @@
+/* stylelint-disable selector-max-compound-selectors */
+
+#main-panel #pipeline-box .table-box .table-viewPort {
+    border-width: 0;
+    box-shadow: none;
+
+    .jobsTable {
+        border-collapse: collapse;
+    }
+
+    .stage-start {
+        margin-top: 1px;
+    }
+
+    .jobsTable .stage-start-time,
+    .jobsTable .stage-wrapper {
+        border-width: 0;
+    }
+
+    .stage-start .cell-box .stage-start-time {
+        border-width: 0;
+        box-shadow: none;
+        width: auto;
+
+        div {
+            display: inline-block;
+            background: none;
+        }
+
+        .date {
+            margin-left: 4em;
+        }
+    }
+
+    tr.totals .stage-start .cell-color {
+        font-weight: normal;
+        color: #444;
+    }
+
+    tr.totals .cell-color {
+        box-shadow: none;
+    }
+
+    .tobsTable-body  tr + tr .stage-start {
+        border-top-width: 0;
+    }
+
+    .stage-start-box {
+        margin: 0 0.5em;
+        width: auto;
+    }
+
+    .changeset-box {
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+        width: auto;
+    }
+
+    .stage-wrapper {
+        min-height: 4em;
+
+        .duration {
+            line-height: 3.2em;
+            box-shadow: none;
+        }
+    }
+}
+
+#main-panel #pipeline-box .table-box tr td .cell-color {
+    min-height: auto;
+}
+
+#main-panel #pipeline-box .table-box tr.job td {
+    height: 4.3em;
+}
+
+#main-panel {
+    .stackedBarChart .stackedBarChart.inner .bar {
+        border-bottom-width: 0;
+        box-shadow: none;
+        background: #ccc;
+    }
+
+    .stackedBarChart .stackedBarChart.inner .bar.highlight {
+        box-shadow: none;
+        background: #fa5b35;
+    }
+}

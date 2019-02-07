@@ -1,0 +1,441 @@
+@import "functions.scss";
+
+// Src
+// Reminder: Each selector using `@include icon-img`
+// must be declared bellow using .icon-size too
+
+[src$="blue.png"] {
+    @include icon-img("check_circle.svg", var(--color-green));
+}
+
+[src$="red.png"] {
+    @include icon-img("error.svg", var(--color-red));
+}
+
+[src$="yellow.png"] {
+    @include icon-img("warning.svg", var(--color-yellow));
+}
+
+[src$="grey.png"], [src$="aborted.png"], [src$="nobuilt.png"], [src$="disabled.png"] {
+    @include icon-img("remove_circle.svg", var(--color-grey));
+}
+
+.icon-health-80plus {
+    @include icon-img("weather-sunny.svg", var(--color-grey));
+}
+
+.icon-health-60to79 {
+    @include icon-img("weather-partlycloudy.svg", var(--color-grey));
+}
+
+.icon-health-40to59 {
+    @include icon-img("weather-cloudy.svg", var(--color-grey));
+}
+
+.icon-health-20to39 {
+    @include icon-img("weather-rainy.svg", var(--color-grey));
+}
+
+.icon-health-00to19 {
+    @include icon-img("weather-pouring.svg", var(--color-grey));
+}
+
+.icon-blue-anime, [src$="blue_anime.gif"] {
+    @include icon-img("autorenew.svg", var(--color-green));
+}
+
+.icon-red-anime, [src$="red_anime.gif"] {
+    @include icon-img("autorenew.svg", var(--color-red));
+}
+
+.icon-grey-anime, [src$="grey_anime.gif"], .icon-nobuilt-anime, .icon-aborted-anime {
+    @include icon-img("autorenew.svg", var(--color-grey));
+}
+
+.icon-yellow-anime, [src$="yellow_anime.gif"] {
+    @include icon-img("autorenew.svg", var(--color-yellow));
+}
+
+.icon-new-package, [src$="new-package.png"] {
+    @include icon-img("add_circle_outline.svg", var(--color-grey));
+}
+
+.icon-user, [src$="user.png"] {
+    @include icon-img("people.svg", var(--color-grey));
+}
+
+.icon-notepad, [src$="notepad.png"] {
+    @include icon-img("history.svg", var(--color-grey));
+}
+
+.icon-setting, [src$="setting.png"], .icon-gear2, [src$="gear2.png"] {
+    @include icon-img("settings.svg", var(--color-grey));
+}
+
+.icon-up, .task-icon-link[href="/"] img {
+    @include icon-img("arrow_back.svg", var(--color-grey));
+}
+
+.icon-edit-delete {
+    @include icon-img("delete.svg", var(--color-grey));
+}
+
+.icon-fingerprint, [src$="fingerprint.png"] {
+    @include icon-img("fingerprint.svg", var(--color-grey));
+}
+
+.icon-graph, [src$="graph.png"] {
+    @include icon-img("insert_chart.svg", var(--color-grey));
+}
+
+.icon-collapse {
+    @include icon-img("expand_less.svg", var(--color-grey));
+}
+
+.icon-expand {
+    @include icon-img("expand_more.svg", var(--color-grey));
+}
+
+.icon-help, [src$="help.png"] {
+    @include icon-img("help_outline.svg", var(--color-grey));
+}
+
+.icon-secure, .icon-lock, [src$="secure.png"] {
+    @include icon-img("lock.svg", var(--color-grey));
+}
+
+.icon-plugin, [src$="plugin.png"] {
+    @include icon-img("extension.svg", var(--color-grey));
+}
+
+.icon-system-log-out, [src$="system-log-out.png"] {
+    @include icon-img("power_settings_new.svg", var(--color-grey));
+}
+
+.icon-refresh, [src$="refresh.png"] {
+    @include icon-img("refresh.svg", var(--color-grey));
+}
+
+.icon-computer, [src$="computer.png"] {
+    @include icon-img("computer.svg", var(--color-grey));
+}
+
+.icon-computer-x {
+    @include icon-img("computer_offline.svg", var(--color-grey));
+}
+
+.icon-new-computer {
+    @include icon-img("computer_new.svg", var(--color-grey));
+}
+
+.icon-clipboard, [src$="clipboard.png"] {
+    @include icon-img("assignment.svg", var(--color-grey));
+}
+
+.icon-monitor, [src$="monitor.png"] {
+    @include icon-img("chart-areaspline.svg", var(--color-grey));
+}
+
+.icon-terminal, [src$="terminal.png"] {
+    @include icon-img("console.svg", var(--color-grey));
+}
+
+.icon-network, [src$="network.png"] {
+    @include icon-img("server-network.svg", var(--color-grey));
+}
+
+.icon-document, .icon-text {
+    @include icon-img("file.svg", var(--color-grey));
+}
+
+.icon-folder, [src$="folder.png"], [src$="/directory16.png"] {
+    @include icon-img("folder.svg", var(--color-grey));
+}
+
+.icon-clock, .icon-clock-anime, [src$="clock.png"] {
+    @include icon-img("play_circle_outline.svg", var(--color-grey));
+}
+
+.icon-folder-delete, [src$="edit-delete.png"] {
+    @include icon-img("folder-remove.svg", var(--color-grey));
+}
+
+.icon-previous {
+    @include icon-img("skip_previous.svg", var(--color-grey));
+}
+
+.icon-next {
+    @include icon-img("skip_next.svg", var(--color-grey));
+}
+
+.icon-save, [src$="/save.png"] {
+    @include icon-img("save.svg", var(--color-grey));
+}
+
+.icon-package, [src$="package.gif"] {
+    @include icon-img("package-down.svg", var(--color-grey));
+}
+
+.icon-search, [src$="search.png"] {
+    @include icon-img("info_outline.svg", var(--color-grey));
+}
+
+.icon-stop {
+    @include icon-img("stop.svg", var(--color-grey));
+}
+
+[src$="/move.png"] {
+    @include icon-img("folder-move.svg", var(--color-grey));
+}
+
+[src$="/atom.gif"] {
+    @include icon(32px); // medium
+    @include icon-img("rss-box.svg", var(--color-yellow));
+}
+
+[src$="credentials.png"] {
+    @include icon(48px); // xl
+    @include icon-img("key.svg", var(--color-grey));
+}
+
+[src$="confighistory.png"] {
+    @include icon-img("build.svg", var(--color-grey));
+}
+
+[src$="domain.png"] {
+    @include icon(48px); // xl
+    @include icon-img("domain.svg", var(--color-grey));
+}
+
+#description-link img, .icon-gear, [src$="gear.png"] {
+    @include icon-img("pencil.svg", var(--color-grey));
+}
+
+.icon-go-next {
+    @include icon-img("arrow_forward.svg", var(--color-grey));
+}
+
+[src$="diskusage48.png"] {
+    @include icon(48px); //
+    @include icon-img("storage.svg", var(--color-grey));
+}
+
+[src$="git-32x32.png"] {
+    @include icon-img("git.svg", var(--color-grey));
+}
+
+[src$="logov3.png"] {
+    @include icon-img("github-circle.svg", var(--color-grey));
+}
+
+[src$="findbugs-24x24.png"], [src$="findbugs-48x48.png"] {
+    @include icon-img("bug_report.svg", var(--color-grey));
+}
+
+[src$="dry-24x24.png"], [src$="dry-48x48.png"] {
+    @include icon-img("compare.svg", var(--color-grey));
+}
+
+[src$="checkstyle-24x24.png"], [src$="checkstyle-48x48.png"] {
+    @include icon-img("flag.svg", var(--color-grey));
+}
+
+[src$="pmd-24x24.png"], [src$="pmd-48x48.png"] {
+    @include icon-img("feedback.svg", var(--color-grey));
+}
+
+[src$="tasks-24x24.png"], [src$="tasks-48x48.png"] {
+    @include icon-img("assignment_late.svg", var(--color-grey));
+}
+
+[src$="analysis-24x24.png"],
+[src$="analysis-48x48.png"],
+[src$="go-24x24.png"],
+[src$="go-48x48.png"],
+[src$="idea-24x24.png"],
+[src$="idea-48x48.png"],
+[src$="java-24x24.png"],
+[src$="java-48x48.png"],
+[src$="resharper-24x24.png"],
+[src$="resharper-48x48.png"],
+[src$="scala-24x24.png"],
+[src$="scala-48x48.png"],
+[src$="warnings-24x24.png"],
+[src$="warnings-48x48.png"] {
+    @include icon-img("warning.svg", var(--color-grey));
+}
+
+// Size
+
+[src$="red.png"],
+[src$="blue.png"],
+[src$="yellow.png"],
+[src$="grey.png"],
+[src$="aborted.png"],
+[src$="nobuilt.png"],
+[src$="disabled.png"],
+.icon-health-80plus,
+.icon-health-60to79,
+.icon-health-40to59,
+.icon-health-20to39,
+.icon-health-00to19,
+.icon-blue-anime,
+[src$="blue_anime.gif"],
+.icon-red-anime,
+[src$="red_anime.gif"],
+.icon-grey-anime,
+[src$="grey_anime.gif"],
+.icon-nobuilt-anime,
+.icon-aborted-anime,
+.icon-yellow-anime,
+[src$="yellow_anime.gif"],
+.icon-new-package,
+[src$="new-package.png"],
+.icon-user,
+[src$="user.png"],
+.icon-notepad,
+[src$="notepad.png"],
+.icon-setting,
+[src$="setting.png"],
+.icon-gear2,
+[src$="gear2.png"],
+.icon-up,
+.icon-edit-delete,
+.icon-fingerprint,
+[src$="fingerprint.png"],
+.icon-graph,
+[src$="graph.png"],
+.icon-collapse,
+.icon-expand,
+.icon-help,
+[src$="help.png"],
+.icon-secure,
+.icon-lock,
+[src$="secure.png"],
+.icon-plugin,
+[src$="plugin.png"],
+.icon-system-log-out,
+[src$="system-log-out.png"],
+.icon-refresh,
+[src$="refresh.png"],
+.icon-computer,
+[src$="computer.png"],
+.icon-computer-x,
+.icon-new-computer,
+.icon-clipboard,
+[src$="clipboard.png"],
+.icon-monitor,
+[src$="monitor.png"],
+.icon-terminal,
+[src$="terminal.png"],
+.icon-network,
+[src$="network.png"],
+.icon-document,
+.icon-text,
+.icon-folder,
+[src$="folder.png"],
+[src$="/directory16.png"],
+.icon-clock,
+.icon-clock-anime,
+[src$="clock.png"],
+.icon-folder-delete,
+[src$="edit-delete.png"],
+.icon-previous,
+.icon-next,
+.icon-save,
+[src$="/save.png"],
+.icon-package,
+[src$="package.gif"],
+.icon-search,
+[src$="search.png"],
+.icon-stop,
+[src$="/move.png"],
+[src$="/atom.gif"],
+[src$="credentials.png"],
+[src$="confighistory.png"],
+[src$="domain.png"],
+#description-link img,
+.icon-gear,
+[src$="gear.png"],
+.icon-go-next,
+[src$="diskusage48.png"],
+[src$="git-32x32.png"],
+[src$="findbugs-24x24.png"],
+[src$="findbugs-48x48.png"],
+[src$="checkstyle-24x24.png"],
+[src$="checkstyle-48x48.png"],
+[src$="analysis-24x24.png"],
+[src$="analysis-48x48.png"],
+[src$="go-24x24.png"],
+[src$="go-48x48.png"],
+[src$="idea-24x24.png"],
+[src$="idea-48x48.png"],
+[src$="java-24x24.png"],
+[src$="java-48x48.png"],
+[src$="resharper-24x24.png"],
+[src$="resharper-48x48.png"],
+[src$="scala-24x24.png"],
+[src$="scala-48x48.png"],
+[src$="warnings-24x24.png"],
+[src$="warnings-48x48.png"],
+[src$="dry-24x24.png"],
+[src$="dry-48x48.png"],
+[src$="pmd-24x24.png"],
+[src$="pmd-48x48.png"],
+[src$="tasks-24x24.png"],
+[src$="tasks-48x48.png"],
+[src$="logov3.png"] {
+    &.icon-xlg, &[src*="48x"], &.icon48x48 {
+        @include icon(48px);
+    }
+
+    &.icon-lg, &[src*="32x"], &.icon32x32, &[style*="width: 32p"], &[width="32"] {
+        @include icon(32px);
+    }
+
+    &.icon-md, &[src*="24x"], &.icon24x24, &[style*="width: 24p"], &[width="24"] {
+        @include icon(24px);
+    }
+
+    &.icon-sm, &[src*="16x"], &.icon16x16, &[style*="width: 16p"], &[width="16"] {
+        @include icon(16px);
+    }
+}
+
+#header .icon-help {
+    filter: brightness(10000);
+}
+
+// Animations
+
+.icon-clock-anime {
+    @include animate-pulse();
+}
+
+[src$="blue_anime.gif"],
+[src$="red_anime.gif"],
+[src$="grey_anime.gif"],
+[src$="yellow_anime.gif"],
+.icon-blue-anime,
+.icon-red-anime,
+.icon-grey-anime,
+.icon-yellow-anime,
+.icon-nobuilt-anime,
+.icon-aborted-anime {
+    @include animate-rotate();
+}
+
+// Hacks
+
+[src*="www.gravatar.com"] {
+    height: auto !important;
+    width: auto !important;
+    padding: 0 !important;
+}
+
+.task-icon-link[href="/"] {
+    img {
+        padding: 36px 0 0 36px !important;
+        filter: brightness(10000);
+    }
+}
