@@ -1,0 +1,28 @@
+
+// make headings on the config pages easier to read
+.section-header {
+    font-size: 2em;
+    border-bottom: none !important;
+    font-weight: lighter !important;
+    margin-bottom: 0.2em;
+    margin-top: 1.5em !important;
+    padding-bottom: 3px;
+}
+
+.setting-name {
+    vertical-align: top;
+    text-align: right;
+    padding-top: 0.57em;
+}
+
+.bottom-sticker-edge {
+    display: none;
+}
+
+.bottom-sticker-inner {
+    margin: 0 0 0 -15px;
+    padding-left: 15px;
+    background: none repeat scroll 0 0 var(--color-sticker-bg) !important;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}

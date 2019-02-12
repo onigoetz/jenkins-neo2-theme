@@ -6,75 +6,17 @@
 @import "core-theme/images.scss";
 @import "core-theme/codemirror.scss";
 @import "base.scss";
-@import "pipeline.scss";
-@import "settings.scss";
-
-#header {
-    height: 45px;
-    background-color: var(--color-primary);
-    //text-transform: uppercase;
-    z-index: 1030;
-    //letter-spacing: 1px;
-    padding: 3px;
-    //Custom logo - path here
-    //background: url('logo.png') no-repeat, var(--color-primary);
-    //background-size: auto 45px, cover;
-
-    .login {
-        top: inherit;
-        margin-top: 2px;
-
-        a {
-            //font-size: 10px;
-            padding: 0 16px;
-        }
-
-        a:hover {
-            color: var(--color-white) !important;
-        }
-
-        b {
-            font-weight: 400;
-        }
-        //Custom logo - hide the default images, but retain the link
-        //#jenkins-home-link img {
-        //  opacity: 0;
-        //}
-    }
-
-    .searchbox {
-        padding: 2px 10px;
-        text-transform: none;
-    }
-
-    #search-box {
-        background: color(var(--color-primary) shade(10%));
-        padding-left: 5px;
-        border-radius: 3px;
-        height: 34px;
-        border: 0;
-        box-shadow: none;
-        color: var(--color-white);
-    }
-}
-
-#breadcrumbBar {
-    background-color: transparent;
-}
-
-.top-sticker-inner {
-    background: none repeat scroll 0 0 var(--color-sticker-bg) !important;
-}
-
-#breadcrumbs li:hover,
-A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
-    background-color: transparent !important;
-}
-
-#breadcrumbs {
-    color: var(--color-text) !important;
-    text-decoration: none;
-}
+@import "components/breadcrumb.scss";
+@import "components/button.scss";
+@import "components/console.scss";
+@import "components/footer.scss";
+@import "components/header.scss";
+@import "components/pane.scss";
+@import "components/pipeline.scss";
+@import "components/progress.scss";
+@import "components/settings.scss";
+@import "components/table.scss";
+@import "components/tabs.scss";
 
 #disable-project {
     float: right;
@@ -89,65 +31,6 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
     font-weight: bold;
     font-size: 1.3em !important;
     text-align: center;
-}
-
-.pane-frame {
-    border: 1px solid #ddd;
-
-    &:hover, &.mouseover {
-        border: 1px solid #ddd !important;
-    }
-
-    .pane-header, .pane-footer {
-        background: transparent;
-        margin-bottom: 5px;
-        border-radius: 0;
-        border: 0;
-    }
-
-    .pane-header {
-        border-bottom: 2px solid var(--color-accent-light);
-    }
-
-    .single-line:hover, .single-line.model-link-active {
-        background: var(--color-accent-light) !important;
-    }
-}
-
-#main-panel .pane-frame {
-    border: 0;
-
-    &:hover, &.mouseover {
-        border: 0 !important;
-    }
-}
-
-.bigtable {
-    th {
-        border-bottom: 2px solid var(--color-accent-light);
-        background-color: transparent;
-    }
-}
-
-table.stripped-odd tr:nth-child(odd) {
-    background: color(var(--color-bg) shade(2%));
-}
-
-.tabBar {
-    .tab {
-        &:first-child {
-            margin-left: 0;
-        }
-
-        &.active a {
-            background: var(--color-accent-light);
-        }
-
-        a {
-            padding: 5px 10px;
-            border-radius: 0;
-        }
-    }
 }
 
 #buildHistoryPage {
@@ -186,12 +69,6 @@ table.stripped-odd tr:nth-child(odd) {
     }
 }
 
-footer {
-    padding: 5px 0;
-    background-color: var(--color-footer-bg);
-    border: 0;
-}
-
 #management-links {
     padding-left: 0 !important;
 
@@ -210,51 +87,12 @@ footer {
     }
 }
 
-th.pane {
-    background-color: transparent;
-}
-
 #side-panel .task-link {
     color: var(--color-text);
 }
 
-.bottom-sticker-edge {
-    display: none;
-}
-
-.bottom-sticker-inner {
-    margin: 0 0 0 -15px;
-    padding-left: 15px;
-    background: none repeat scroll 0 0 var(--color-sticker-bg) !important;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-}
-
 a#jenkins-home-link {
     opacity: 1 !important;
-}
-
-table.progress-bar.red td.progress-bar-done {
-    background-color: var(--color-red) !important;
-    border-color: var(--color-red) !important;
-}
-
-td.progress-bar-done {
-    background-color: var(--color-green) !important;
-    border-color: var(--color-green) !important;
-}
-
-td.progress-bar-left {
-    border: none !important;
-    background-color: #ccc !important;
-}
-
-table.progress-bar {
-    border-color: transparent !important;
-}
-
-td {
-    vertical-align: middle;
 }
 
 .ygtvlabel,
@@ -272,80 +110,8 @@ td {
     background-color: transparent !important;
 }
 
-#jenkins .yui-button {
-    button {
-        text-decoration: none;
-        text-align: center;
-        letter-spacing: 0.5px;
-        transition: 0.1s ease-out;
-        cursor: pointer;
-        border: none !important;
-        border-radius: 3px;
-        display: inline-block;
-        height: 36px;
-        outline: 0;
-        padding: 0 2rem;
-        vertical-align: middle;
-        -webkit-tap-highlight-color: transparent;
-    }
-
-    &.primary button {
-        color: var(--color-white) !important;
-        background-color: var(--color-button) !important;
-
-        &:hover {
-            background-color: var(--color-button-hover) !important;
-        }
-
-        &:active {
-            color: var(--color-black) !important;
-            background-color: var(--color-button-active) !important;
-            box-shadow: none;
-        }
-    }
-}
-
-#enable-project .yui-button {
-    vertical-align: middle;
-}
-
-.console-output, .console-output * {
-    position: relative;
-    font-family: var(--font-console), monospace !important;
-    background: var(--console-black);
-    color: var(--console-white);
-    cursor: text;
-}
-
-.console-output {
-    padding: 10px 20px;
-
-    a {
-        color: var(--console-white);
-        font-weight: bold;
-    }
-
-    div.collapseHeader {
-        background-color: var(--console-white);
-        color: var(--console-black);
-    }
-
-    div.collapseAction p {
-        color: var(--console-white) !important;
-    }
-}
-
 .ace_editor, .ace_editor * {
     font-family: var(--font-console), monospace !important;
-}
-
-/*.jenkins_ver:after {
-    margin-left: 15px;
-    content: "neo2-theme @@version";
-}*/
-
-.page_generated {
-    display: none;
 }
 
 [style^="color:gray"] {
@@ -354,14 +120,4 @@ td {
 
 [style^="color:red"] {
     color: var(--color-red) !important;
-}
-
-// make headings on the config pages easier to read
-.section-header {
-    font-size: 2em;
-    border-bottom: none !important;
-    font-weight: lighter !important;
-    margin-bottom: 0.2em;
-    margin-top: 1.5em !important;
-    padding-bottom: 3px;
 }

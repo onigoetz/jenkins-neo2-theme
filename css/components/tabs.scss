@@ -1,0 +1,16 @@
+.tabBar {
+    .tab {
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &.active a {
+            background: var(--color-accent-light);
+        }
+
+        a {
+            padding: 5px 10px;
+            border-radius: 0;
+        }
+    }
+}

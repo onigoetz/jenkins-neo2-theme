@@ -1,0 +1,17 @@
+#breadcrumbBar {
+    background-color: transparent;
+}
+
+.top-sticker-inner {
+    background: none repeat scroll 0 0 var(--color-sticker-bg) !important;
+}
+
+#breadcrumbs li:hover,
+A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
+    background-color: transparent !important;
+}
+
+#breadcrumbs {
+    color: var(--color-text) !important;
+    text-decoration: none;
+}

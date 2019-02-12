@@ -1,0 +1,36 @@
+#jenkins .yui-button {
+    button {
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 0.5px;
+        transition: 0.1s ease-out;
+        cursor: pointer;
+        border: none !important;
+        border-radius: 3px;
+        display: inline-block;
+        height: 36px;
+        outline: 0;
+        padding: 0 2rem;
+        vertical-align: middle;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    &.primary button {
+        color: var(--color-white) !important;
+        background-color: var(--color-button) !important;
+
+        &:hover {
+            background-color: var(--color-button-hover) !important;
+        }
+
+        &:active {
+            color: var(--color-black) !important;
+            background-color: var(--color-button-active) !important;
+            box-shadow: none;
+        }
+    }
+}
+
+#enable-project .yui-button {
+    vertical-align: middle;
+}

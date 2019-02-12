@@ -8,7 +8,8 @@
   },
   "scripts": {
     "lint": "crafty cssLint --fix --preset legacy css/**",
-    "build": "crafty run"
+    "build": "crafty run",
+    "watch": "crafty watch"
   },
   "keywords": [
     "modern theme",
