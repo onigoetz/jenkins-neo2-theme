@@ -5,247 +5,247 @@
 // must be declared bellow using .icon-size too
 
 [src$="blue.png"] {
-    @include icon-img("check_circle.svg", var(--color-green));
+    background-image: svg-load("check_circle.svg", fill=var(--color-green));
 }
 
 [src$="red.png"] {
-    @include icon-img("error.svg", var(--color-red));
+    background-image: svg-load("error.svg", fill=var(--color-red));
 }
 
 [src$="yellow.png"] {
-    @include icon-img("warning.svg", var(--color-yellow));
+    background-image: svg-load("warning.svg", fill=var(--color-yellow));
 }
 
 [src$="grey.png"], [src$="aborted.png"], [src$="nobuilt.png"], [src$="disabled.png"] {
-    @include icon-img("remove_circle.svg", var(--color-grey));
+    background-image: svg-load("remove_circle.svg", fill=var(--color-grey));
 }
 
 .icon-health-80plus {
-    @include icon-img("weather-sunny.svg", var(--color-grey));
+    background-image: svg-load("weather-sunny.svg", fill=var(--color-grey));
 }
 
 .icon-health-60to79 {
-    @include icon-img("weather-partlycloudy.svg", var(--color-grey));
+    background-image: svg-load("weather-partlycloudy.svg", fill=var(--color-grey));
 }
 
 .icon-health-40to59 {
-    @include icon-img("weather-cloudy.svg", var(--color-grey));
+    background-image: svg-load("weather-cloudy.svg", fill=var(--color-grey));
 }
 
 .icon-health-20to39 {
-    @include icon-img("weather-rainy.svg", var(--color-grey));
+    background-image: svg-load("weather-rainy.svg", fill=var(--color-grey));
 }
 
 .icon-health-00to19 {
-    @include icon-img("weather-pouring.svg", var(--color-grey));
+    background-image: svg-load("weather-pouring.svg", fill=var(--color-grey));
 }
 
 .icon-blue-anime, [src$="blue_anime.gif"] {
-    @include icon-img("autorenew.svg", var(--color-green));
+    background-image: svg-load("autorenew.svg", fill=var(--color-green));
 }
 
 .icon-red-anime, [src$="red_anime.gif"] {
-    @include icon-img("autorenew.svg", var(--color-red));
+    background-image: svg-load("autorenew.svg", fill=var(--color-red));
 }
 
 .icon-grey-anime, [src$="grey_anime.gif"], .icon-nobuilt-anime, .icon-aborted-anime {
-    @include icon-img("autorenew.svg", var(--color-grey));
+    background-image: svg-load("autorenew.svg", fill=var(--color-grey));
 }
 
 .icon-yellow-anime, [src$="yellow_anime.gif"] {
-    @include icon-img("autorenew.svg", var(--color-yellow));
+    background-image: svg-load("autorenew.svg", fill=var(--color-yellow));
 }
 
 .icon-new-package, [src$="new-package.png"] {
-    @include icon-img("add_circle_outline.svg", var(--color-grey));
+    background-image: svg-load("add_circle_outline.svg", fill=var(--color-grey));
 }
 
 .icon-user, [src$="user.png"] {
-    @include icon-img("people.svg", var(--color-grey));
+    background-image: svg-load("people.svg", fill=var(--color-grey));
 }
 
 .icon-notepad, [src$="notepad.png"] {
-    @include icon-img("history.svg", var(--color-grey));
+    background-image: svg-load("history.svg", fill=var(--color-grey));
 }
 
 .icon-setting, [src$="setting.png"], .icon-gear2, [src$="gear2.png"] {
-    @include icon-img("settings.svg", var(--color-grey));
+    background-image: svg-load("settings.svg", fill=var(--color-grey));
 }
 
 .icon-up, .task-icon-link[href="/"] img {
-    @include icon-img("arrow_back.svg", var(--color-grey));
+    background-image: svg-load("arrow_back.svg", fill=var(--color-grey));
 }
 
 .icon-edit-delete {
-    @include icon-img("delete.svg", var(--color-grey));
+    background-image: svg-load("delete.svg", fill=var(--color-grey));
 }
 
 .icon-fingerprint, [src$="fingerprint.png"] {
-    @include icon-img("fingerprint.svg", var(--color-grey));
+    background-image: svg-load("fingerprint.svg", fill=var(--color-grey));
 }
 
 .icon-graph, [src$="graph.png"] {
-    @include icon-img("insert_chart.svg", var(--color-grey));
+    background-image: svg-load("insert_chart.svg", fill=var(--color-grey));
 }
 
 .icon-collapse {
-    @include icon-img("expand_less.svg", var(--color-grey));
+    background-image: svg-load("expand_less.svg", fill=var(--color-grey));
 }
 
 .icon-expand {
-    @include icon-img("expand_more.svg", var(--color-grey));
+    background-image: svg-load("expand_more.svg", fill=var(--color-grey));
 }
 
 .icon-help, [src$="help.png"] {
-    @include icon-img("help_outline.svg", var(--color-grey));
+    background-image: svg-load("help_outline.svg", fill=var(--color-grey));
 }
 
 .icon-secure, .icon-lock, [src$="secure.png"] {
-    @include icon-img("lock.svg", var(--color-grey));
+    background-image: svg-load("lock.svg", fill=var(--color-grey));
 }
 
 .icon-plugin, [src$="plugin.png"] {
-    @include icon-img("extension.svg", var(--color-grey));
+    background-image: svg-load("extension.svg", fill=var(--color-grey));
 }
 
 .icon-system-log-out, [src$="system-log-out.png"] {
-    @include icon-img("power_settings_new.svg", var(--color-grey));
+    background-image: svg-load("power_settings_new.svg", fill=var(--color-grey));
 }
 
 .icon-refresh, [src$="refresh.png"] {
-    @include icon-img("refresh.svg", var(--color-grey));
+    background-image: svg-load("refresh.svg", fill=var(--color-grey));
 }
 
 .icon-computer, [src$="computer.png"] {
-    @include icon-img("computer.svg", var(--color-grey));
+    background-image: svg-load("computer.svg", fill=var(--color-grey));
 }
 
 .icon-computer-x {
-    @include icon-img("computer_offline.svg", var(--color-grey));
+    background-image: svg-load("computer_offline.svg", fill=var(--color-grey));
 }
 
 .icon-new-computer {
-    @include icon-img("computer_new.svg", var(--color-grey));
+    background-image: svg-load("computer_new.svg", fill=var(--color-grey));
 }
 
 .icon-clipboard, [src$="clipboard.png"] {
-    @include icon-img("assignment.svg", var(--color-grey));
+    background-image: svg-load("assignment.svg", fill=var(--color-grey));
 }
 
 .icon-monitor, [src$="monitor.png"] {
-    @include icon-img("chart-areaspline.svg", var(--color-grey));
+    background-image: svg-load("chart-areaspline.svg", fill=var(--color-grey));
 }
 
 .icon-terminal, [src$="terminal.png"] {
-    @include icon-img("console.svg", var(--color-grey));
+    background-image: svg-load("console.svg", fill=var(--color-grey));
 }
 
 .icon-network, [src$="network.png"] {
-    @include icon-img("server-network.svg", var(--color-grey));
+    background-image: svg-load("server-network.svg", fill=var(--color-grey));
 }
 
 .icon-document, .icon-text {
-    @include icon-img("file.svg", var(--color-grey));
+    background-image: svg-load("file.svg", fill=var(--color-grey));
 }
 
 .icon-folder, [src$="folder.png"], [src$="/directory16.png"] {
-    @include icon-img("folder.svg", var(--color-grey));
+    background-image: svg-load("folder.svg", fill=var(--color-grey));
 }
 
 .icon-clock, .icon-clock-anime, [src$="clock.png"] {
-    @include icon-img("play_circle_outline.svg", var(--color-grey));
+    background-image: svg-load("play_circle_outline.svg", fill=var(--color-grey));
 }
 
 .icon-folder-delete, [src$="edit-delete.png"] {
-    @include icon-img("folder-remove.svg", var(--color-grey));
+    background-image: svg-load("folder-remove.svg", fill=var(--color-grey));
 }
 
 .icon-previous {
-    @include icon-img("skip_previous.svg", var(--color-grey));
+    background-image: svg-load("skip_previous.svg", fill=var(--color-grey));
 }
 
 .icon-next {
-    @include icon-img("skip_next.svg", var(--color-grey));
+    background-image: svg-load("skip_next.svg", fill=var(--color-grey));
 }
 
 .icon-save, [src$="/save.png"] {
-    @include icon-img("save.svg", var(--color-grey));
+    background-image: svg-load("save.svg", fill=var(--color-grey));
 }
 
 .icon-package, [src$="package.gif"] {
-    @include icon-img("package-down.svg", var(--color-grey));
+    background-image: svg-load("package-down.svg", fill=var(--color-grey));
 }
 
 .icon-search, [src$="search.png"] {
-    @include icon-img("info_outline.svg", var(--color-grey));
+    background-image: svg-load("info_outline.svg", fill=var(--color-grey));
 }
 
 .icon-stop {
-    @include icon-img("stop.svg", var(--color-grey));
+    background-image: svg-load("stop.svg", fill=var(--color-grey));
 }
 
 [src$="/move.png"] {
-    @include icon-img("folder-move.svg", var(--color-grey));
+    background-image: svg-load("folder-move.svg", fill=var(--color-grey));
 }
 
 [src$="/atom.gif"] {
     @include icon(32px); // medium
-    @include icon-img("rss-box.svg", var(--color-yellow));
+    background-image: svg-load("rss-box.svg", fill=var(--color-yellow));
 }
 
 [src$="credentials.png"] {
     @include icon(48px); // xl
-    @include icon-img("key.svg", var(--color-grey));
+    background-image: svg-load("key.svg", fill=var(--color-grey));
 }
 
 [src$="confighistory.png"] {
-    @include icon-img("build.svg", var(--color-grey));
+    background-image: svg-load("build.svg", fill=var(--color-grey));
 }
 
 [src$="domain.png"] {
     @include icon(48px); // xl
-    @include icon-img("domain.svg", var(--color-grey));
+    background-image: svg-load("domain.svg", fill=var(--color-grey));
 }
 
 #description-link img, .icon-gear, [src$="gear.png"] {
-    @include icon-img("pencil.svg", var(--color-grey));
+    background-image: svg-load("pencil.svg", fill=var(--color-grey));
 }
 
 .icon-go-next {
-    @include icon-img("arrow_forward.svg", var(--color-grey));
+    background-image: svg-load("arrow_forward.svg", fill=var(--color-grey));
 }
 
 [src$="diskusage48.png"] {
     @include icon(48px); //
-    @include icon-img("storage.svg", var(--color-grey));
+    background-image: svg-load("storage.svg", fill=var(--color-grey));
 }
 
 [src$="git-32x32.png"] {
-    @include icon-img("git.svg", var(--color-grey));
+    background-image: svg-load("git.svg", fill=var(--color-grey));
 }
 
 [src$="logov3.png"] {
-    @include icon-img("github-circle.svg", var(--color-grey));
+    background-image: svg-load("github-circle.svg", fill=var(--color-grey));
 }
 
 [src$="findbugs-24x24.png"], [src$="findbugs-48x48.png"] {
-    @include icon-img("bug_report.svg", var(--color-grey));
+    background-image: svg-load("bug_report.svg", fill=var(--color-grey));
 }
 
 [src$="dry-24x24.png"], [src$="dry-48x48.png"] {
-    @include icon-img("compare.svg", var(--color-grey));
+    background-image: svg-load("compare.svg", fill=var(--color-grey));
 }
 
 [src$="checkstyle-24x24.png"], [src$="checkstyle-48x48.png"] {
-    @include icon-img("flag.svg", var(--color-grey));
+    background-image: svg-load("flag.svg", fill=var(--color-grey));
 }
 
 [src$="pmd-24x24.png"], [src$="pmd-48x48.png"] {
-    @include icon-img("feedback.svg", var(--color-grey));
+    background-image: svg-load("feedback.svg", fill=var(--color-grey));
 }
 
 [src$="tasks-24x24.png"], [src$="tasks-48x48.png"] {
-    @include icon-img("assignment_late.svg", var(--color-grey));
+    background-image: svg-load("assignment_late.svg", fill=var(--color-grey));
 }
 
 [src$="analysis-24x24.png"],
@@ -262,7 +262,7 @@
 [src$="scala-48x48.png"],
 [src$="warnings-24x24.png"],
 [src$="warnings-48x48.png"] {
-    @include icon-img("warning.svg", var(--color-grey));
+    background-image: svg-load("warning.svg", fill=var(--color-grey));
 }
 
 // Size

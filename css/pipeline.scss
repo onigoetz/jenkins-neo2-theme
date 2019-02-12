@@ -17,10 +17,15 @@
         border-width: 0;
     }
 
+    .jobsTable .stage-cell.FAILED .stage-wrapper {
+        box-shadow: none;
+    }
+
     .stage-start .cell-box .stage-start-time {
         border-width: 0;
         box-shadow: none;
         width: auto;
+        background: transparent;
 
         div {
             display: inline-block;
@@ -35,6 +40,7 @@
     tr.totals .stage-start .cell-color {
         font-weight: normal;
         color: #444;
+        font-size: 0.8em;
     }
 
     tr.totals .cell-color {
@@ -57,12 +63,26 @@
         width: auto;
     }
 
+    .changeset-box .run-changeset {
+        position: static;
+        border-radius: 0;
+        padding: 0;
+    }
+
     .stage-wrapper {
         min-height: 4em;
+        border-radius: 0;
 
         .duration {
             line-height: 3.2em;
             box-shadow: none;
+            color: #000;
+            border-radius: 0;
+        }
+
+        .pause-duration {
+            bottom: 4px;
+            color: #000;
         }
     }
 }
