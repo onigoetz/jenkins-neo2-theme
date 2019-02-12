@@ -10,15 +10,15 @@ body, table, form, td, th, p {
 
 body {
     line-height: 20px !important;
-    background-color: var(--color-bg);
+    background-color: var(--background-color--light);
 }
 
 a, a:hover, a:visited, a:link {
-    text-decoration: none !important;
+    //text-decoration: none !important;
     color: var(--color-link);
 
     &:hover {
-        text-decoration: underline !important;
+        //text-decoration: underline !important;
         color: var(--color-button-hover) !important;
     }
 }

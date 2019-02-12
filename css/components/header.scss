@@ -44,5 +44,9 @@
         border: 0;
         box-shadow: none;
         color: var(--color-white);
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
     }
 }

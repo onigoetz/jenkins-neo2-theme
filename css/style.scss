@@ -11,6 +11,7 @@
 @import "components/console.scss";
 @import "components/footer.scss";
 @import "components/header.scss";
+@import "components/jobpage.scss";
 @import "components/pane.scss";
 @import "components/pipeline.scss";
 @import "components/progress.scss";
@@ -31,42 +32,6 @@
     font-weight: bold;
     font-size: 1.3em !important;
     text-align: center;
-}
-
-#buildHistoryPage {
-    .build-search-row {
-        input {
-            padding: 5px;
-        }
-
-        td {
-            padding: 0;
-        }
-
-        td td {
-            padding: 0.2em 1em;
-        }
-
-        .clear {
-            padding: 5px 10px;
-            font-size: 1.3em;
-            top: 0.3em;
-            right: 0.6em;
-
-            &:hover {
-                border: 0;
-                background-color: var(--color-accent-light);
-                padding-right: 10px;
-                top: 0.3em;
-            }
-        }
-    }
-
-    .build-row {
-        &.model-link-active {
-            background-color: var(--color-accent-light) !important;
-        }
-    }
 }
 
 #management-links {
@@ -119,5 +84,5 @@ a#jenkins-home-link {
 }
 
 [style^="color:red"] {
-    color: var(--color-red) !important;
+    color: var(--color-error) !important;
 }

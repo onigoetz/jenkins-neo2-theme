@@ -1,23 +1,41 @@
+:root {
+    --Panel-background-color: white;
+
+    --Panel-border-color: var(--background-color--secondary);
+    --Panel-border-width: 1px;
+    --Panel-border-radius: 2px;
+
+    --Panel__title-background-color: var(--background-color--secondary);
+    --Panel__title-border-radius: 2px;
+    --Panel__title-border-color: var(--Panel-border-color);
+    --Panel__title-padding: 0.5em 0.75em;
+    --Panel__title-color: #79848e;
+    --Panel__title-font-size: 1rem;
+    --Panel__title-font-weight: bold;
+    --Panel--collapsed__title-border-radius: 2px;
+
+    --Panel__content-border-radius: 2px;
+}
+
 .pane-frame {
-    border: 1px solid #ddd;
+    background: var(--Panel-background-color);
+    border-radius: var(--Panel-border-radius);
+    border: var(--Panel-border-width) solid var(--Panel-border-color);
 
     &:hover, &.mouseover {
-        border: 1px solid #ddd !important;
+        border: var(--Panel-border-width) solid var(--Panel-border-color) !important;
     }
 
     .pane-header, .pane-footer {
-        background: transparent;
-        margin-bottom: 5px;
+        background: var(--Panel__title-background-color);
         border-radius: 0;
         border: 0;
     }
 
     .pane-header {
-        border-bottom: 2px solid var(--color-accent-light);
-    }
-
-    .single-line:hover, .single-line.model-link-active {
-        background: var(--color-accent-light) !important;
+        cursor: pointer;
+        border-bottom: var(--Panel-border-width) solid var(--Panel__title-border-color);
+        padding: var(--Panel__title-padding);
     }
 }
 

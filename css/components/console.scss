@@ -1,16 +1,14 @@
-.console-output, .console-output * {
+.console-output {
     position: relative;
     font-family: var(--font-console), monospace !important;
     background: var(--console-black);
     color: var(--console-white);
-    cursor: text;
 }
 
 .console-output {
     padding: 10px 20px;
 
     a {
-        color: var(--console-white);
         font-weight: bold;
     }
 

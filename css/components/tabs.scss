@@ -1,16 +1,60 @@
+:root {
+    --Tabs__item-background-color: var(--background-color--default);
+    --Tabs__item-border-width: var(--border-width--default);
+    --Tabs__item-border-style: var(--border-style--default);
+    --Tabs__item-border-color: var(--border-color--transparent);
+    --Tabs__item-padding: var(--space-size--sm) var(--space-size--md);
+    --Tabs__item-text-color: var(--text-color--default);
+
+    --Tabs__item--hover-text-color: var(--text-color--primary);
+    --Tabs__item--hover-background-color: var(--background-color--light);
+
+    --Tabs__item--focus-box-shadow-width: var(--shadow-size--forState);
+    --Tabs__item--focus-box-shadow-color: var(--shadow-color--focus);
+
+    --Tabs__item--active-border-color: var(--border-color--default);
+    --Tabs__item--active-border-width: 1px;
+    --Tabs__item--active-text-color: var(--text-color--primary);
+    --Tabs__item--active-background-color: var(--background-color--default);
+}
+
 .tabBar {
     .tab {
+        margin-left: 0.5em;
+
         &:first-child {
             margin-left: 0;
         }
 
-        &.active a {
-            background: var(--color-accent-light);
+        a, a.addTab {
+            display: inline-block;
+            position: relative;
+
+            border: var(--Tabs__item-border-width) var(--Tabs__item-border-style) var(--Tabs__item-border-color);
+            border-bottom-color: var(--Tabs__item--active-border-color);
+            padding: var(--Tabs__item-padding);
+            cursor: pointer;
+            color: var(--Tabs__item-text-color);
+
+            background: var(--Tabs__item-background-color);
+
+            &:hover {
+                text-decoration: none !important;
+                color: var(--Tabs__item--hover-text-color);
+                background: var(--Tabs__item--hover-background-color);
+            }
+
+            &:focus {
+                box-shadow: var(--Tabs__item--focus-box-shadow-width) var(--Tabs__item--focus-box-shadow-color);
+                outline: 0;
+            }
         }
 
-        a {
-            padding: 5px 10px;
-            border-radius: 0;
+        &.active a {
+            color: var(--Tabs__item--active-text-color);
+            border-color: var(--Tabs__item--active-border-color);
+            border-bottom: 1px solid white !important;
+            background: var(--Tabs__item--active-background-color);
         }
     }
 }

@@ -85,6 +85,14 @@
             color: #000;
         }
     }
+
+    .jobsTable .stage-cell.FAILED .stage-wrapper .duration {
+        color: var(--color-error);
+    }
+
+    .jobsTable .FAILED .jobName .badge {
+        background-color: var(--color-error);
+    }
 }
 
 #main-panel #pipeline-box .table-box tr td .cell-color {

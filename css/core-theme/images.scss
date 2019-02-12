@@ -9,7 +9,7 @@
 }
 
 [src$="red.png"] {
-    background-image: svg-load("error.svg", fill=var(--color-red));
+    background-image: svg-load("error.svg", fill=var(--color-error));
 }
 
 [src$="yellow.png"] {
@@ -45,7 +45,7 @@
 }
 
 .icon-red-anime, [src$="red_anime.gif"] {
-    background-image: svg-load("autorenew.svg", fill=var(--color-red));
+    background-image: svg-load("autorenew.svg", fill=var(--color-error));
 }
 
 .icon-grey-anime, [src$="grey_anime.gif"], .icon-nobuilt-anime, .icon-aborted-anime {
@@ -436,6 +436,6 @@
 .task-icon-link[href="/"] {
     img {
         padding: 36px 0 0 36px !important;
-        filter: brightness(10000);
+        //filter: brightness(10000);
     }
 }
