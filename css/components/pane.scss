@@ -27,14 +27,14 @@
     }
 
     .pane-header, .pane-footer {
-        background: var(--Panel__title-background-color);
+        background: white;
         border-radius: 0;
         border: 0;
     }
 
     .pane-header {
         cursor: pointer;
-        border-bottom: var(--Panel-border-width) solid var(--Panel__title-border-color);
+        border-bottom: 2px solid var(--color-brand);
         padding: var(--Panel__title-padding);
     }
 }

@@ -97,7 +97,7 @@
 }
 
 .icon-help, [src$="help.png"] {
-    background-image: svg-load("help_outline.svg", fill=var(--color-grey));
+    background-image: svg-load("help_outline.svg", fill=var(--color-info));
 }
 
 .icon-secure, .icon-lock, [src$="secure.png"] {
@@ -181,7 +181,7 @@
 }
 
 .icon-stop {
-    background-image: svg-load("stop.svg", fill=var(--color-grey));
+    background-image: svg-load("stop.svg", fill=var(--color-error));
 }
 
 [src$="/move.png"] {
@@ -402,10 +402,6 @@
     }
 }
 
-#header .icon-help {
-    filter: brightness(10000);
-}
-
 // Animations
 
 .icon-clock-anime {
@@ -438,4 +434,8 @@
         padding: 36px 0 0 36px !important;
         //filter: brightness(10000);
     }
+}
+
+.manage-option .icon {
+    top: -5px;
 }

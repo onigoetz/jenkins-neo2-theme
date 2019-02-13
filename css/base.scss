@@ -10,7 +10,7 @@ body, table, form, td, th, p {
 
 body {
     line-height: 20px !important;
-    background-color: var(--background-color--light);
+    background-color: #f1f5f7;
 }
 
 a, a:hover, a:visited, a:link {
@@ -24,7 +24,7 @@ a, a:hover, a:visited, a:link {
 }
 
 h2 {
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
     margin-top: 2em;
     font-weight: normal;
 }

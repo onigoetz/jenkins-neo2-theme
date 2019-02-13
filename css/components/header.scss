@@ -11,14 +11,14 @@
     //background-size: auto 45px, cover;
 
     .login {
-        color: var(--color-brand);
+        color: var(--color-brand) !important;
         top: inherit;
         margin-top: 2px;
 
         a {
             //font-size: 10px;
             padding: 0 16px;
-            color: var(--color-brand);
+            color: var(--color-brand) !important;
         }
 
         a:hover {
@@ -46,10 +46,24 @@
         border-radius: 3px;
         height: 34px;
         box-shadow: none;
-        color: var(--color-white);
+        color: var(--color-base);
 
         &::placeholder {
             color: rgba(0, 0, 0, 0.8);
+            text-transform: capitalize;
         }
     }
+}
+
+#search-box-completion .yui-ac-content {
+    border-width: 0;
+    box-shadow: 1px 1px 5px #555;
+
+    .yui-ac-bd {
+        display: block;
+    }
+}
+
+#search-box-completion LI.yui-ac-highlight {
+    background: var(--color-brand);
 }
