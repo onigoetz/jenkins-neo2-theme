@@ -56,38 +56,6 @@
     background-image: svg-load("autorenew.svg", fill=var(--color-yellow));
 }
 
-.icon-new-package, [src$="new-package.png"] {
-    background-image: svg-load("add_circle_outline.svg", fill=var(--color-grey));
-}
-
-.icon-user, [src$="user.png"] {
-    background-image: svg-load("people.svg", fill=var(--color-grey));
-}
-
-.icon-notepad, [src$="notepad.png"] {
-    background-image: svg-load("history.svg", fill=var(--color-grey));
-}
-
-.icon-setting, [src$="setting.png"], .icon-gear2, [src$="gear2.png"] {
-    background-image: svg-load("settings.svg", fill=var(--color-grey));
-}
-
-.icon-up, .task-icon-link[href="/"] img {
-    background-image: svg-load("arrow_back.svg", fill=var(--color-grey));
-}
-
-.icon-edit-delete {
-    background-image: svg-load("delete.svg", fill=var(--color-grey));
-}
-
-.icon-fingerprint, [src$="fingerprint.png"] {
-    background-image: svg-load("fingerprint.svg", fill=var(--color-grey));
-}
-
-.icon-graph, [src$="graph.png"] {
-    background-image: svg-load("insert_chart.svg", fill=var(--color-grey));
-}
-
 .icon-collapse {
     background-image: svg-load("expand_less.svg", fill=var(--color-grey));
 }
@@ -96,173 +64,13 @@
     background-image: svg-load("expand_more.svg", fill=var(--color-grey));
 }
 
-.icon-help, [src$="help.png"] {
-    background-image: svg-load("help_outline.svg", fill=var(--color-info));
-}
-
-.icon-secure, .icon-lock, [src$="secure.png"] {
-    background-image: svg-load("lock.svg", fill=var(--color-grey));
-}
-
-.icon-plugin, [src$="plugin.png"] {
-    background-image: svg-load("extension.svg", fill=var(--color-grey));
-}
-
-.icon-system-log-out, [src$="system-log-out.png"] {
-    background-image: svg-load("power_settings_new.svg", fill=var(--color-grey));
-}
-
-.icon-refresh, [src$="refresh.png"] {
-    background-image: svg-load("refresh.svg", fill=var(--color-grey));
-}
-
-.icon-computer, [src$="computer.png"] {
-    background-image: svg-load("computer.svg", fill=var(--color-grey));
-}
-
-.icon-computer-x {
-    background-image: svg-load("computer_offline.svg", fill=var(--color-grey));
-}
-
-.icon-new-computer {
-    background-image: svg-load("computer_new.svg", fill=var(--color-grey));
-}
-
-.icon-clipboard, [src$="clipboard.png"] {
-    background-image: svg-load("assignment.svg", fill=var(--color-grey));
-}
-
-.icon-monitor, [src$="monitor.png"] {
-    background-image: svg-load("chart-areaspline.svg", fill=var(--color-grey));
-}
-
-.icon-terminal, [src$="terminal.png"] {
-    background-image: svg-load("console.svg", fill=var(--color-grey));
-}
-
-.icon-network, [src$="network.png"] {
-    background-image: svg-load("server-network.svg", fill=var(--color-grey));
-}
-
-.icon-document, .icon-text {
-    background-image: svg-load("file.svg", fill=var(--color-grey));
-}
-
-.icon-folder, [src$="folder.png"], [src$="/directory16.png"] {
-    background-image: svg-load("folder.svg", fill=var(--color-grey));
-}
-
-.icon-clock, .icon-clock-anime, [src$="clock.png"] {
-    background-image: svg-load("play_circle_outline.svg", fill=var(--color-grey));
-}
-
-.icon-folder-delete, [src$="edit-delete.png"] {
-    background-image: svg-load("folder-remove.svg", fill=var(--color-grey));
-}
-
-.icon-previous {
-    background-image: svg-load("skip_previous.svg", fill=var(--color-grey));
-}
-
-.icon-next {
-    background-image: svg-load("skip_next.svg", fill=var(--color-grey));
-}
-
-.icon-save, [src$="/save.png"] {
-    background-image: svg-load("save.svg", fill=var(--color-grey));
-}
-
-.icon-package, [src$="package.gif"] {
-    background-image: svg-load("package-down.svg", fill=var(--color-grey));
-}
-
-.icon-search, [src$="search.png"] {
-    background-image: svg-load("info_outline.svg", fill=var(--color-grey));
-}
-
 .icon-stop {
     background-image: svg-load("stop.svg", fill=var(--color-error));
-}
-
-[src$="/move.png"] {
-    background-image: svg-load("folder-move.svg", fill=var(--color-grey));
 }
 
 [src$="/atom.gif"] {
     @include icon(32px); // medium
     background-image: svg-load("rss-box.svg", fill=var(--color-yellow));
-}
-
-[src$="credentials.png"] {
-    @include icon(48px); // xl
-    background-image: svg-load("key.svg", fill=var(--color-grey));
-}
-
-[src$="confighistory.png"] {
-    background-image: svg-load("build.svg", fill=var(--color-grey));
-}
-
-[src$="domain.png"] {
-    @include icon(48px); // xl
-    background-image: svg-load("domain.svg", fill=var(--color-grey));
-}
-
-#description-link img, .icon-gear, [src$="gear.png"] {
-    background-image: svg-load("pencil.svg", fill=var(--color-grey));
-}
-
-.icon-go-next {
-    background-image: svg-load("arrow_forward.svg", fill=var(--color-grey));
-}
-
-[src$="diskusage48.png"] {
-    @include icon(48px); //
-    background-image: svg-load("storage.svg", fill=var(--color-grey));
-}
-
-[src$="git-32x32.png"] {
-    background-image: svg-load("git.svg", fill=var(--color-grey));
-}
-
-[src$="logov3.png"] {
-    background-image: svg-load("github-circle.svg", fill=var(--color-grey));
-}
-
-[src$="findbugs-24x24.png"], [src$="findbugs-48x48.png"] {
-    background-image: svg-load("bug_report.svg", fill=var(--color-grey));
-}
-
-[src$="dry-24x24.png"], [src$="dry-48x48.png"] {
-    background-image: svg-load("compare.svg", fill=var(--color-grey));
-}
-
-[src$="checkstyle-24x24.png"], [src$="checkstyle-48x48.png"] {
-    background-image: svg-load("flag.svg", fill=var(--color-grey));
-}
-
-[src$="pmd-24x24.png"], [src$="pmd-48x48.png"] {
-    background-image: svg-load("feedback.svg", fill=var(--color-grey));
-}
-
-[src$="tasks-24x24.png"], [src$="tasks-48x48.png"] {
-    background-image: svg-load("assignment_late.svg", fill=var(--color-grey));
-}
-
-[src$="analysis-24x24.png"],
-[src$="analysis-48x48.png"],
-[src$="go-24x24.png"],
-[src$="go-48x48.png"],
-[src$="idea-24x24.png"],
-[src$="idea-48x48.png"],
-[src$="java-24x24.png"],
-[src$="java-48x48.png"],
-[src$="resharper-24x24.png"],
-[src$="resharper-48x48.png"],
-[src$="scala-24x24.png"],
-[src$="scala-48x48.png"],
-[src$="warnings-24x24.png"],
-[src$="warnings-48x48.png"] {
-    background-image: svg-load("warning.svg", fill=var(--color-grey));
 }
 
 // Size
@@ -289,102 +97,11 @@
 .icon-aborted-anime,
 .icon-yellow-anime,
 [src$="yellow_anime.gif"],
-.icon-new-package,
-[src$="new-package.png"],
-.icon-user,
-[src$="user.png"],
-.icon-notepad,
-[src$="notepad.png"],
-.icon-setting,
-[src$="setting.png"],
-.icon-gear2,
-[src$="gear2.png"],
-.icon-up,
-.icon-edit-delete,
-.icon-fingerprint,
-[src$="fingerprint.png"],
-.icon-graph,
-[src$="graph.png"],
+
 .icon-collapse,
 .icon-expand,
-.icon-help,
-[src$="help.png"],
-.icon-secure,
-.icon-lock,
-[src$="secure.png"],
-.icon-plugin,
-[src$="plugin.png"],
-.icon-system-log-out,
-[src$="system-log-out.png"],
-.icon-refresh,
-[src$="refresh.png"],
-.icon-computer,
-[src$="computer.png"],
-.icon-computer-x,
-.icon-new-computer,
-.icon-clipboard,
-[src$="clipboard.png"],
-.icon-monitor,
-[src$="monitor.png"],
-.icon-terminal,
-[src$="terminal.png"],
-.icon-network,
-[src$="network.png"],
-.icon-document,
-.icon-text,
-.icon-folder,
-[src$="folder.png"],
-[src$="/directory16.png"],
-.icon-clock,
-.icon-clock-anime,
-[src$="clock.png"],
-.icon-folder-delete,
-[src$="edit-delete.png"],
-.icon-previous,
-.icon-next,
-.icon-save,
-[src$="/save.png"],
-.icon-package,
-[src$="package.gif"],
-.icon-search,
-[src$="search.png"],
 .icon-stop,
-[src$="/move.png"],
-[src$="/atom.gif"],
-[src$="credentials.png"],
-[src$="confighistory.png"],
-[src$="domain.png"],
-#description-link img,
-.icon-gear,
-[src$="gear.png"],
-.icon-go-next,
-[src$="diskusage48.png"],
-[src$="git-32x32.png"],
-[src$="findbugs-24x24.png"],
-[src$="findbugs-48x48.png"],
-[src$="checkstyle-24x24.png"],
-[src$="checkstyle-48x48.png"],
-[src$="analysis-24x24.png"],
-[src$="analysis-48x48.png"],
-[src$="go-24x24.png"],
-[src$="go-48x48.png"],
-[src$="idea-24x24.png"],
-[src$="idea-48x48.png"],
-[src$="java-24x24.png"],
-[src$="java-48x48.png"],
-[src$="resharper-24x24.png"],
-[src$="resharper-48x48.png"],
-[src$="scala-24x24.png"],
-[src$="scala-48x48.png"],
-[src$="warnings-24x24.png"],
-[src$="warnings-48x48.png"],
-[src$="dry-24x24.png"],
-[src$="dry-48x48.png"],
-[src$="pmd-24x24.png"],
-[src$="pmd-48x48.png"],
-[src$="tasks-24x24.png"],
-[src$="tasks-48x48.png"],
-[src$="logov3.png"] {
+[src$="/atom.gif"] {
     &.icon-xlg, &[src*="48x"], &.icon48x48 {
         @include icon(48px);
     }
@@ -403,10 +120,6 @@
 }
 
 // Animations
-
-.icon-clock-anime {
-    @include animate-pulse();
-}
 
 [src$="blue_anime.gif"],
 [src$="red_anime.gif"],
@@ -427,13 +140,6 @@
     height: auto !important;
     width: auto !important;
     padding: 0 !important;
-}
-
-.task-icon-link[href="/"] {
-    img {
-        padding: 36px 0 0 36px !important;
-        //filter: brightness(10000);
-    }
 }
 
 .manage-option .icon {
