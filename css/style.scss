@@ -3,85 +3,29 @@
 @import "core-theme/functions.scss";
 @import "core-theme/images.scss";
 @import "core-theme/codemirror.scss";
-@import "base.scss";
-@import "components/alert.scss";
 @import "components/breadcrumb.scss";
-@import "components/button.scss";
 @import "components/console.scss";
-@import "components/footer.scss";
 @import "components/header.scss";
 @import "components/jobpage.scss";
 @import "components/pane.scss";
 @import "components/pipeline.scss";
 @import "components/progress.scss";
 @import "components/settings.scss";
-@import "components/table.scss";
-@import "components/tabs.scss";
 
-#disable-project {
-    float: right;
+body {
+    --primary: #fa5b35;
+    --primary-hover: color(#fa5b35 shade(10%));
+    --link-color: #fa5b35;
+    --link-visited-color: #fa5b35;
+    --link-color--hover: color(#fa5b35 shade(10%));
+    --link-dark-color--hover: #fa5b35;
+
+    --btn-primary-bg: #fa5b35;
+    --btn-primary-bg-hover: color(#fa5b35 shade(10%));
 }
 
-#notification-bar {
-    height: 50px !important;
-}
-
-#executors .pane-content > table tr td:first-child {
-    color: #aaa !important;
-    font-weight: bold;
-    font-size: 1.3em !important;
-    text-align: center;
-}
-
-#management-links {
-    padding-left: 0 !important;
-
-    a {
-        margin-right: 10px;
-        font-weight: 600;
-    }
-
-    tr {
-        display: block;
-        margin: 10px 0;
-    }
-
-    td div {
-        color: #333 !important;
-    }
-}
-
-#side-panel .task-link {
-    color: var(--color-text);
-}
-
-a#jenkins-home-link {
-    opacity: 1 !important;
-}
-
-.ygtvlabel,
-.ygtvlabel:link,
-.ygtvlabel:visited,
-.ygtvlabel:hover {
-    background-color: transparent !important;
-}
-
-.yuimenuitemlabel {
-    outline: none;
-}
-
-#main-panel-content > div:nth-child(2) {
-    background-color: transparent !important;
-}
-
-.ace_editor, .ace_editor * {
-    font-family: var(--font-console), monospace !important;
-}
-
-[style^="color:gray"] {
-    color: var(--color-grey) !important;
-}
-
-[style^="color:red"] {
-    color: var(--color-error) !important;
+/* Fix color issue on logs dialog */
+.cbwf-stage-logs .node-name,
+.cbwf-dialog .header {
+    background-color: #ccc !important;
 }

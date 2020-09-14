@@ -1,6 +1,7 @@
 #buildHistoryPage {
     .build-search-row {
         input {
+            border-width: 1px;
             padding: 5px;
 
             &::placeholder {
@@ -13,20 +14,7 @@
         }
 
         td td {
-            padding: 0.2em 1em;
-        }
-
-        .clear {
-            padding: 5px 10px;
-            font-size: 1.3em;
-            top: 0.3em;
-            right: 0.6em;
-
-            &:hover {
-                border: 0;
-                padding-right: 10px;
-                top: 0.3em;
-            }
+            padding: 0.1em 0.3em;
         }
     }
 

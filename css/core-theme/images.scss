@@ -5,7 +5,7 @@
 // must be declared bellow using .icon-size too
 
 [src$="blue.png"] {
-    background-image: svg-load("check_circle.svg", fill=var(--color-green));
+    background-image: svg-load("check_circle.svg", fill=var(--color-success));
 }
 
 [src$="red.png"] {
@@ -13,7 +13,7 @@
 }
 
 [src$="yellow.png"] {
-    background-image: svg-load("warning.svg", fill=var(--color-yellow));
+    background-image: svg-load("warning.svg", fill=var(--color-warning));
 }
 
 [src$="grey.png"], [src$="aborted.png"], [src$="nobuilt.png"], [src$="disabled.png"] {
@@ -41,7 +41,7 @@
 }
 
 .icon-blue-anime, [src$="blue_anime.gif"] {
-    background-image: svg-load("autorenew.svg", fill=var(--color-green));
+    background-image: svg-load("autorenew.svg", fill=var(--color-success));
 }
 
 .icon-red-anime, [src$="red_anime.gif"] {
@@ -53,7 +53,7 @@
 }
 
 .icon-yellow-anime, [src$="yellow_anime.gif"] {
-    background-image: svg-load("autorenew.svg", fill=var(--color-yellow));
+    background-image: svg-load("autorenew.svg", fill=var(--color-warning));
 }
 
 .icon-collapse {
@@ -70,7 +70,7 @@
 
 [src$="/atom.gif"] {
     @include icon(32px); // medium
-    background-image: svg-load("rss-box.svg", fill=var(--color-yellow));
+    background-image: svg-load("rss-box.svg", fill=var(--color-warning));
 }
 
 // Size

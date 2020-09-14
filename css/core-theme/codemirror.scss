@@ -13,13 +13,16 @@
     line-height: 20px !important;
 }
 
-.CodeMirror-gutters {
+.CodeMirror-gutter {
     background: var(--color-black) !important;
     color: var(--console-green) !important;
-    border: none;
+    border-right-width: 0 !important;
 }
 
-.CodeMirror-guttermarker, .CodeMirror-guttermarker-subtle, .CodeMirror-linenumber {
+.CodeMirror-gutter-text,
+.CodeMirror-guttermarker,
+.CodeMirror-guttermarker-subtle,
+.CodeMirror-linenumber {
     color: var(--console-green) !important;
 }
 

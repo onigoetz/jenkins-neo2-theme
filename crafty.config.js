@@ -16,5 +16,11 @@ module.exports = {
             .setOptions({
                 path: __dirname + "/images"
             });
+
+        const customProperties = config.processor("postcss-custom-properties")
+            .options;
+          customProperties.variables = {
+            preserve: true
+          };
     }
 }
